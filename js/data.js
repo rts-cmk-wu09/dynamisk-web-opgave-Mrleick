@@ -1,4 +1,3 @@
-
 let hero = {
     image: "https://dazzling-squirrel-77a63d.netlify.app/imgs/hero.png",
     headline: "Find out how we can save your time in Backpacking in Europe",
