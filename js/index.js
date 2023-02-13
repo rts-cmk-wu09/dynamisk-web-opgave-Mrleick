@@ -22,21 +22,39 @@ header.innerHTML = `
      <p class="herobox__copy">${hero.copy}</p>
      <button class="herobox__button"><img class="herobox__icon" src="${hero.icon}" alt="Imag"><p class="herobox__p">Explore</p></button>
     </div>
-  `; 
+  `;
 
-  let servicesContainer = document.querySelector(".services");
+let servicesContainer = document.querySelector(".services");
 
-  for (let i = 0; i < services.length; i++) {
-      let service = services[i];
-      let article = document.createElement("article");
-      article.classList.add("servicebox");
-      article.innerHTML = `
+for (let i = 0; i < services.length; i++) {
+  let service = services[i];
+  let article = document.createElement("article");
+  article.classList.add("servicebox");
+  article.innerHTML = `
           <img src="${service.illustration}" alt="Illustration for ${service.headline}">
           <h2 class="servicebox__header">${service.headline}</h2>
-          <p>${service.text}</p>
-          <a href="#">${service.linktext}</a>
+          <p class=" servicebox__text">${service.text}</p>
+          <a class="servicebox__link" href="#">${service.linktext}</a>
       `;
-      
-      servicesContainer.appendChild(article);
-  }
-  
+
+  servicesContainer.appendChild(article);
+}
+
+/*  */
+let container = document.querySelector('.facilities');
+let articleHTML = `
+  <h2 class="facilities-headline">${facilities.headline}</h2>
+`;
+for (let i = 0; i < facilities.options.length; i++) {
+  let option = facilities.options[i];
+  articleHTML += `  
+          <article class="facility">
+            <img src="${option.icon}" alt="">
+            <h3 class="facility__header">${option.headline}</h3>
+            <p class="facility__text">${option.text}</p>
+            <a class="facility__link" href="#">Show me more</a>
+          </article>
+        `;
+}
+
+container.innerHTML = articleHTML;
