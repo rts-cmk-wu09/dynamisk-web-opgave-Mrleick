@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+* {
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
 }
 
-.hero{
+.hero {
     display: grid;
     grid-template-columns: 480px 480px 480px;
     grid-template-rows: 325px 325px;
@@ -14,16 +14,36 @@
     width: 1440px;
 }
 
-.heroimg{
+.heroimg {
     max-width: 1440px;
 }
 
-.herotext{
+.herobox {
     background-color: white;
     height: 537px;
     width: 741px;
     grid-column: 1/2;
     grid-row: 2/3;
     margin-left: 63px;
+    margin-top: 60px;
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+}
+
+.herobox__headline {
+    font-weight: 700;
+    font-size: 39px;
+    width: 521px;
+    margin-top: 96px;
+    margin-left: 64px;
+}
+
+.herobox__copy{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    opacity: 0.6;
+    max-width: 515px;
+    margin-top: 29px;
+    margin-left: 64px;
 }
