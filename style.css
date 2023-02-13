@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +39,7 @@
     margin-left: 64px;
 }
 
-.herobox__copy{
+.herobox__copy {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -49,7 +50,7 @@
     margin-left: 64px;
 }
 
-.herobox__button{
+.herobox__button {
     display: flex;
     width: 250px;
     background-color: rgba(247, 128, 101, 1);
@@ -62,33 +63,86 @@
     margin-top: 29px;
     cursor: pointer;
 }
-.herobox__icon{
+
+.herobox__icon {
     margin-left: 69px;
     margin-top: 21px;
     width: 24px;
     margin-right: 8px;
 }
 
-.herobox__p{
+.herobox__p {
     margin-top: 22px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
 
 /* Services */
-.services{
-    display:flex;
+.services {
+    display: flex;
     justify-content: space-between;
     width: 1240px;
     margin: auto;
 }
 
-.servicebox{
+.servicebox {
     width: 386px;
 }
 
-.servicebox__header{
+.servicebox__header {
     font-size: 24px;
     margin-bottom: 1em;
     margin-top: 84px;
+}
+
+.servicebox__text {
+    color: black;
+    opacity: 0.5;
+    margin-bottom: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.servicebox__link {
+    text-decoration: none;
+    color: #F78065;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*  Facilities */
+.facilities {
+    display: grid;
+    width: 1240px;
+    margin: 240px auto;
+}
+
+.facility {
+    max-width: 275px;
+    grid-row: 2/3;
+    display: grid;
+    height: 265px;
+}
+
+.facilities-headline {
+    width: 758px;
+    grid-column: 1/5;
+    font-size: 36px;
+    margin-bottom: 108px;
+}
+
+.facility__text {
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    opacity: 0.5;
+    height: 72px;
+}
+
+.facility__link {
+    color: #F78065;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
 }
