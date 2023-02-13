@@ -12,6 +12,7 @@
     grid-template-rows: 325px 325px;
     margin: auto;
     width: 1440px;
+    margin-bottom: 400px;
 }
 
 .heroimg {
@@ -49,6 +50,7 @@
 }
 
 .herobox__button{
+    display: flex;
     width: 250px;
     background-color: rgba(247, 128, 101, 1);
     color: white;
@@ -59,4 +61,34 @@
     margin-left: 62px;
     margin-top: 29px;
     cursor: pointer;
+}
+.herobox__icon{
+    margin-left: 69px;
+    margin-top: 21px;
+    width: 24px;
+    margin-right: 8px;
+}
+
+.herobox__p{
+    margin-top: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+/* Services */
+.services{
+    display:flex;
+    justify-content: space-between;
+    width: 1240px;
+    margin: auto;
+}
+
+.servicebox{
+    width: 386px;
+}
+
+.servicebox__header{
+    font-size: 24px;
+    margin-bottom: 1em;
+    margin-top: 84px;
 }
