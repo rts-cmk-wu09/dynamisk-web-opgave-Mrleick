@@ -47,3 +47,16 @@
     margin-top: 29px;
     margin-left: 64px;
 }
+
+.herobox__button{
+    width: 250px;
+    background-color: rgba(247, 128, 101, 1);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    height: 65px;
+    border: none;
+    margin-left: 62px;
+    margin-top: 29px;
+    cursor: pointer;
+}
