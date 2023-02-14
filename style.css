@@ -146,3 +146,115 @@
     font-size: 18px;
     text-decoration: none;
 }
+
+/* Sites */
+
+.sites {
+    display: flex;
+    margin: auto;
+    width: 1240px;
+}
+
+.sites__box {
+    width: 325px;
+    margin-right: auto;
+}
+
+.sites__title {
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+.sites__des {
+    color: black;
+    opacity: 0.5;
+}
+
+.sites__button {
+    display: flex;
+    width: 250px;
+    margin-top: 69px;
+    height: 65px;
+    border: none;
+    background: #F78065;
+    color: white;
+    font-weight: 700px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+
+.sites__icon {
+    margin-left: 87px;
+    margin-top: 21px;
+}
+
+.sites__btnp {
+    width: 47px;
+    font-size: 18px;
+    margin-top: 22px;
+}
+
+.sites__name {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.sites_city {
+    margin-bottom: 11px;
+}
+
+.sites__link {
+    text-decoration: none;
+    color: #F78065;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sitebox__img {
+    max-width: 230px;
+    height: 418px;
+    margin-right: 49px;
+}
+
+
+/* Advantages */
+.advantages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 232px auto;
+    width: 1240px;
+}
+
+.advantages__article {
+    display: grid;
+    width: 386px;
+}
+
+.advantages__title {
+    grid-column: 1/4;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 108px;
+}
+
+.advantages__icon {
+    margin-bottom: 64px;
+}
+
+.advantages__headline {
+    font-weight: 700;
+    font-size: 22px;
+    height: 56px;
+}
+
+.advantages__p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.5;
+    height: 96px;
+    margin-top: 24px;
+}
