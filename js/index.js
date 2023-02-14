@@ -14,6 +14,7 @@ for (var i = 0; i < words.length; i++) {
 // Join the words back together into a single string
 var modifiedHeadline = words.join(" ");
 
+/* Hero*/
 header.innerHTML = `
 <img class="heroimg" src="${hero.image}" alt="woman in a red shirt">
 
@@ -24,6 +25,7 @@ header.innerHTML = `
     </div>
   `;
 
+/* Services */
 let servicesContainer = document.querySelector(".services");
 
 for (let i = 0; i < services.length; i++) {
@@ -40,7 +42,7 @@ for (let i = 0; i < services.length; i++) {
   servicesContainer.appendChild(article);
 }
 
-/*  */
+/* Facilities */
 let container = document.querySelector('.facilities');
 let articleHTML = `
   <h2 class="facilities-headline">${facilities.headline}</h2>
@@ -58,3 +60,46 @@ for (let i = 0; i < facilities.options.length; i++) {
 }
 
 container.innerHTML = articleHTML;
+
+/* Sites */
+let sitecontainer = document.querySelector('.sites');
+let siteHTML = ` 
+  <div class="sites__box">
+  <h2 class="sites__title">${sites.headline}</h2>
+  <p class="sites__des">${sites.text}</p>
+  <button class="sites__button"><img class="sites__icon" src="${sites.btnicon}" alt="Imag"><p class="sites__btnp">Start</p></button>
+  </div>
+`;
+for (let i = 0; i < sites.places.length; i++) {
+  let places = sites.places[i];
+  siteHTML += `  
+          <article class="sitebox">
+            <img class="sitebox__img" src="${places.img}" alt="">
+            <p class="sites__name">${places.name}</p>
+            <p class="sites_city">${places.city}</p>
+            <a class="sites__link" href="#">View the site</a>
+          </article>
+        `;
+}
+
+
+sitecontainer.innerHTML = siteHTML;
+
+/* advantages */
+let advantagecontainer = document.querySelector('.advantages');
+let advantageHTML = `
+  <h2 class="advantages__title">Our advantages</h2>
+`;
+for (let i = 0; i < advantages.length; i++) {
+  let advantage = advantages[i];
+  advantageHTML += `  
+          <article class="advantages__article">
+          <img class="advantages__icon" src="${advantage.icon}" alt="">
+            <h3 class="advantages__headline">${advantage.headline}</h3>
+            <p class="advantages__p">${advantage.text}</p>
+          </article>
+        `;
+}
+advantagecontainer.innerHTML = advantageHTML;
+
+/* Footer */
