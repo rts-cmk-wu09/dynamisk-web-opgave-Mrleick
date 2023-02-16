@@ -1,3 +1,5 @@
+let header = document.querySelector(".hero");
+let service = document.querySelector(".services")
 
 let words = hero.headline.split(" ");
 
@@ -8,6 +10,10 @@ for (var i = 0; i < words.length; i++) {
 }
 
 var modifiedHeadline = words.join(" ");
+
+/* Hero*/
+header.innerHTML = `
+<img class="heroimg" src="${hero.image}" alt="woman in a red shirt">
 
     <div class="herobox">
      <h1 class="herobox__headline">${modifiedHeadline}</h1>
