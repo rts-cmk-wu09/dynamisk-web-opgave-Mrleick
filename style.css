@@ -261,7 +261,7 @@
 
 /* Footer */
 footer {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     width: 1440px;
@@ -269,9 +269,11 @@ footer {
     height: 575px;
     margin: auto;
 }
-.footer__title{
+
+.footer__title {
     margin-bottom: 16px;
 }
+
 .footer__box {
     width: 304px;
     margin-left: 103px;
@@ -305,12 +307,28 @@ footer {
     color: black;
 }
 
-hr{
+hr {
     width: 1237px;
     grid-column: 1/5;
     margin-left: 103px;
     height: 1px;
 }
-.footer__links{
+
+.footer__links {
     grid-row: 3/4;
+    grid-column: 3/5;
+    margin-left: 18px;
+    display: flex;
+    width: 483px;
+    justify-content: space-between;
+}
+
+.footer__a {
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.footer__copy{
+    margin-left: 100px;
 }
