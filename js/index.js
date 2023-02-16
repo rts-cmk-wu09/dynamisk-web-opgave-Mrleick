@@ -1,9 +1,6 @@
 let header = document.querySelector(".hero");
 let service = document.querySelector(".services")
 
-
-
-
 let words = hero.headline.split(" ");
 // Loop through the words and add HTML elements with the desired style
 for (var i = 0; i < words.length; i++) {
@@ -113,25 +110,29 @@ let footerHTML = `
 `;
 for (let i = 0; i < footer.become.length; i++) {
   let become = footer.become[i];
+  let numLinks = i == 1 ? 3 : 4; // set the number of links based on the index value
+  let linkHTML = ''; // create an empty string to store the link HTML
+  for (let j = 1; j <= numLinks; j++) {
+    linkHTML += `<a class="footer__link" href="#">${become['p'+j]}</a>`;
+  }
   footerHTML += `  
-          <article class="footer__article">
-            <h3 class="footer__headline">${become.headline}</h3>
-            <a class="footer__link" href="#">${become.p1}</a>
-            <a class="footer__link" href="#">${become.p2}</a>
-            <a class="footer__link" href="#">${become.p3}</a>
-            <a class="footer__link" href="#">${become.p4}</a>
-          </article>
-        `;
+    <article class="footer__article">
+      <h3 class="footer__headline">${become.headline}</h3>
+      ${linkHTML}
+    </article>
+  `;
 }
-footercontainer.innerHTML = footerHTML;
 
 // add a horizontal line and links to the bottom of the footer
 footerHTML += `
   <hr>
+  <p class="footer__copy">EazyCamper. All rights reserved. </p>
   <div class="footer__links">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a class="footer__a" href="#">About</a>
+    <a class="footer__a" href="#">Site Map</a>
+    <a class="footer__a" href="#">Terms</a>
+    <a class="footer__a" href="#">Privacy Police</a>
+    <a class="footer__a" href="#">Teams</a>
   </div>
 `;
 
