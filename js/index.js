@@ -89,6 +89,7 @@ sitecontainer.innerHTML = siteHTML;
 let advantagecontainer = document.querySelector('.advantages');
 let advantageHTML = `
   <h2 class="advantages__title">Our advantages</h2>
+  
 `;
 for (let i = 0; i < advantages.length; i++) {
   let advantage = advantages[i];
@@ -103,3 +104,36 @@ for (let i = 0; i < advantages.length; i++) {
 advantagecontainer.innerHTML = advantageHTML;
 
 /* Footer */
+let footercontainer = document.querySelector('footer');
+let footerHTML = `
+  <div class="footer__box">
+  <h3 class="footer__title">${footer.headline}</h3>
+  <h2 class="footer__text">${footer.text}</h2>
+  </div>
+`;
+for (let i = 0; i < footer.become.length; i++) {
+  let become = footer.become[i];
+  footerHTML += `  
+          <article class="footer__article">
+            <h3 class="footer__headline">${become.headline}</h3>
+            <a class="footer__link" href="#">${become.p1}</a>
+            <a class="footer__link" href="#">${become.p2}</a>
+            <a class="footer__link" href="#">${become.p3}</a>
+            <a class="footer__link" href="#">${become.p4}</a>
+          </article>
+        `;
+}
+footercontainer.innerHTML = footerHTML;
+
+// add a horizontal line and links to the bottom of the footer
+footerHTML += `
+  <hr>
+  <div class="footer__links">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+`;
+
+// update the footer container with the generated HTML content
+footercontainer.innerHTML = footerHTML;
