@@ -2,13 +2,13 @@ let header = document.querySelector(".hero");
 let service = document.querySelector(".services")
 
 let words = hero.headline.split(" ");
-// Loop through the words and add HTML elements with the desired style
+
 for (var i = 0; i < words.length; i++) {
   if (i === 5 || i === 6 || i === 7) {
     words[i] = "<span style='color: rgba(247, 128, 101, 1);'>" + words[i] + "</span>";
   }
 }
-// Join the words back together into a single string
+
 var modifiedHeadline = words.join(" ");
 
 /* Hero*/
@@ -110,8 +110,8 @@ let footerHTML = `
 `;
 for (let i = 0; i < footer.become.length; i++) {
   let become = footer.become[i];
-  let numLinks = i == 1 ? 3 : 4; // set the number of links based on the index value
-  let linkHTML = ''; // create an empty string to store the link HTML
+  let numLinks = i == 1 ? 3 : 4;
+  let linkHTML = '';
   for (let j = 1; j <= numLinks; j++) {
     linkHTML += `<a class="footer__link" href="#">${become['p'+j]}</a>`;
   }
@@ -123,7 +123,7 @@ for (let i = 0; i < footer.become.length; i++) {
   `;
 }
 
-// add a horizontal line and links to the bottom of the footer
+
 footerHTML += `
   <hr>
   <p class="footer__copy">EazyCamper. All rights reserved. </p>
@@ -136,5 +136,5 @@ footerHTML += `
   </div>
 `;
 
-// update the footer container with the generated HTML content
+
 footercontainer.innerHTML = footerHTML;
